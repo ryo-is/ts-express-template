@@ -1,11 +1,13 @@
-import {NextFunction, Request, Response} from "express";
+import { Request, Response } from 'express'
 
-const express = require('express');
-const indexRouter = express.Router();
+const express = require('express')
+const indexRouter = express.Router()
 
-/* GET users listing. */
-indexRouter.get('/', (req: Request, res: Response, next: NextFunction) => {
-  res.send('index');
-});
+// indexRouter.get('/', (req: Request, res: Response, next: NextFunction) => {
+//   res.send('index')
+// })
+indexRouter.get('/', (req: Request, res: Response) => {
+  res.send('index')
+})
 
-export {indexRouter}
+export { indexRouter }
