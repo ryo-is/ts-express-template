@@ -1,5 +1,4 @@
-import { indexRouter } from './routes/index'
-import { router } from './routes/users'
+import { router } from './src/infrastructures/web/routes'
 
 const express = require('express')
 const path = require('path')
@@ -14,7 +13,6 @@ app.use(express.urlencoded({ extended: false }))
 app.use(cookieParser())
 app.use(express.static(path.join(__dirname, 'public')))
 
-app.use('/', indexRouter)
-app.use('/users', router)
+app.use('/', router)
 
 export { app }
