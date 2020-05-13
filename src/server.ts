@@ -1,5 +1,5 @@
 import { Application } from 'express'
-import { router } from './src/infrastructures/web/routes'
+import { router } from './infrastructures/web/routes'
 
 const express = require('express')
 const port = process.env.PORT || 3000
