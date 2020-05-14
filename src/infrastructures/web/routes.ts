@@ -1,7 +1,7 @@
-import { Request, Response, NextFunction } from 'express'
+import { Request, Response, NextFunction, Router } from 'express'
 
 const express = require('express')
-const router = express.Router()
+const router: Router = express.Router()
 
 router.get('/', (req: Request, res: Response, next: NextFunction) => {
   res.send('index')
