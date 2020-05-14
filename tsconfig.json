@@ -8,6 +8,7 @@
       "es2018",
       "dom"
     ],
+    "types": ["reflect-metadata"],
     "outDir": "./dist",
     "moduleResolution": "node",
     "removeComments": true,
@@ -15,6 +16,8 @@
     "noUnusedLocals": true,
     "noImplicitReturns": true,
     "noFallthroughCasesInSwitch": true,
-    "strictFunctionTypes": false
+    "strictFunctionTypes": false,
+    "experimentalDecorators": true,
+    "emitDecoratorMetadata": true
   }
 }
